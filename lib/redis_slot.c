@@ -1,6 +1,6 @@
-#include <lua.h>
-#include <lualib.h>
-#include <lauxlib.h>
+#include </usr/local/openresty/luajit/include/luajit-2.1/lua.h>
+#include </usr/local/openresty/luajit/include/luajit-2.1/lualib.h>
+#include </usr/local/openresty/luajit/include/luajit-2.1/lauxlib.h>
 #include <stddef.h>
 #include <stdlib.h>
 #include <string.h>
