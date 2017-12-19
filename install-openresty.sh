@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 #安装基本类库
 yum install readline-devel pcre-devel openssl-devel gcc git -y
 
@@ -8,7 +10,7 @@ tar -zxvf openresty-1.13.6.1.tar.gz
 cd openresty-1.13.6.1
 ./configure
 make
-sudo make install
+make install
 
 #安装redis-lua连接池
 cd /opt/resty-redis-cluster/lib
