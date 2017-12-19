@@ -11,6 +11,7 @@ cd openresty-1.13.6.1
 ./configure
 make
 make install
+echo "OpenResty安装完成"
 
 #安装redis-lua连接池
 cd /opt/resty-redis-cluster/lib
@@ -19,3 +20,4 @@ mv redis_slot.so /usr/local/openresty/lualib/
 mv rediscluster.lua /usr/local/openresty/lualib/resty/
 mkdir /usr/local/openresty/nginx/lua
 mv redis_connector.lua /usr/local/openresty/nginx/lua/
+echo "redis lua 连接池安装完成"
