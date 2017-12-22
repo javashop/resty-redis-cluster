@@ -19,5 +19,6 @@ gcc redis_slot.c -fPIC -shared -o redis_slot.so
 mv redis_slot.so /usr/local/openresty/lualib/
 mv rediscluster.lua /usr/local/openresty/lualib/resty/
 mkdir /usr/local/openresty/nginx/lua
-mv redis_connector.lua /usr/local/openresty/nginx/lua/
+mv cluster_connector.lua /usr/local/openresty/nginx/lua/
+mv single_connector.lua /usr/local/openresty/nginx/lua/
 echo "redis lua 连接池安装完成"
